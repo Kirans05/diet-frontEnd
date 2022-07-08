@@ -39,16 +39,16 @@ const MyDetails = () => {
           alignItems={"center"}
           rowGap={5}
         >
-          <Text fontSize={50}>User Fitness Details</Text>
-          <Text>Gender : {user.calories[0].gender}</Text>
-          <Text>Height : {user.calories[0].height}</Text>
-          <Text>Weight : {user.calories[0].weight}</Text>
-          <Text>Activity : {user.calories[0].active}</Text>
-          <Text>Current Calories : {user.calories[0].AMR}</Text>
+          <Text fontSize={{base:"40px",md:50}}>User Fitness Details</Text>
+          <Text fontSize={{base:"25px",md:30}}>Gender : {user.calories[0].gender}</Text>
+          <Text fontSize={{base:"25px",md:30}}>Height : {user.calories[0].height}</Text>
+          <Text fontSize={{base:"25px",md:30}}>Weight : {user.calories[0].weight}</Text>
+          <Text fontSize={{base:"25px",md:30}}>Activity : {user.calories[0].active}</Text>
+          <Text fontSize={{base:"25px",md:30}}>Current Calories : {user.calories[0].AMR}</Text>
           {myDietPlan == "" ? (
-            <Text>Diet Plan : No Diet Plan</Text>
+            <Text fontSize={{base:"25px",md:30}}>Diet Plan : No Diet Plan</Text>
           ) : (
-            <Text>Diet Plan : {myDietPlan.dietPlan[0].dietName}</Text>
+            <Text fontSize={{base:"25px",md:30}}>Diet Plan : {myDietPlan.dietPlan[0].dietName}</Text>
           )}
         </Box>
       )}

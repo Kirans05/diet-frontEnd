@@ -100,7 +100,11 @@ const Userbody = () => {
 
   return (
     <Box mt={5}>
-      <Box>
+      <Box
+      display={{base:"flex",md:"inline-block"}}
+      flexDirection={{base:"row",md:"none"}}
+      justifyContent={{base:"space-around",md:"none"}}
+      >
         <Button variant={"solid"} colorScheme="blue" mr={5}>
           Home
         </Button>

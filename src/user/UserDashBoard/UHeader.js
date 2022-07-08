@@ -40,7 +40,7 @@ import { MainContext } from "../../context/Context";
       <>
         <Box
           bg="#22A0F7"
-          w="100%"
+          width={{base:"100%",md:"100%"}}
           p={4}
           color="black"
           d="flex"
@@ -49,7 +49,7 @@ import { MainContext } from "../../context/Context";
           justifyContent={"space-between"}
         >
           <Text
-        fontSize={40}
+        fontSize={{base:"40px"}}
         fontStyle={"italic"}
 
           >
@@ -63,7 +63,7 @@ import { MainContext } from "../../context/Context";
           bg="black"
           >
             {
-              children ?  <Button colorScheme='red' size='md'  mr={3} onClick={()=>nav("/dashboard")}>
+              children ?  <Button colorScheme='red' size={"sm"}  mr={3} onClick={()=>nav("/dashboard")} >
               Home
             </Button>
             : null

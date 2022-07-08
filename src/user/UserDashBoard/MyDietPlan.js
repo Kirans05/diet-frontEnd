@@ -175,7 +175,7 @@ const MyDietPlan = () => {
       <UHeader>
         <button>Home</button>
       </UHeader>
-      <Box bg="bisque" fontSize={40} d="flex">
+      <Box bg="bisque" fontSize={{base:"30px",md:50}} d="flex">
         <Text mr={5}>Diet Planner</Text>
         <Text>
           {date}-{month}-{year}
@@ -235,7 +235,9 @@ const MyDietPlan = () => {
             alignItems={"flex-start"}
             rowGap={5}
             boxShadow={"lg"}
-            width={"50%"}
+            width={{base:"100%",md:"50%"}}
+            marginLeft={{base:"10px"}}
+            marginRight={{base:"10px"}}
             p={5}
             _hover={{
               boxShadow: "2xl",
@@ -285,7 +287,10 @@ const MyDietPlan = () => {
             alignItems={"flex-start"}
             rowGap={5}
             boxShadow={"lg"}
-            width={"50%"}
+            // width={"50%"}
+            width={{base:"100%",md:"50%"}}
+            marginLeft={{base:"10px"}}
+            marginRight={{base:"10px"}}
             _hover={{
               boxShadow: "2xl",
             }}
@@ -320,7 +325,9 @@ const MyDietPlan = () => {
             _hover={{
               boxShadow: "2xl",
             }}
-            width={"50%"}
+            width={{base:"100%",md:"50%"}}
+            marginLeft={{base:"10px"}}
+            marginRight={{base:"10px"}}
             p={5}
           >
             <Text>Dinner</Text>
@@ -352,7 +359,9 @@ const MyDietPlan = () => {
               boxShadow: "2xl",
             }}
             boxShadow={"lg"}
-            width={"50%"}
+            width={{base:"100%",md:"50%"}}
+            marginLeft={{base:"10px"}}
+            marginRight={{base:"10px"}}
             p={5}
           >
             <Text>Snacks</Text>
