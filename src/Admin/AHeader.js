@@ -46,9 +46,10 @@ import ADProfileModal from "./ADProfileModal";
           alignItems="center"
           justifyContent={"space-between"}
           className="Aheader"
+          height={{base:"15vh"}}
         >
           <Text
-        fontSize={40}
+        fontSize={{base:30,md:40}}
         fontStyle={"italic"}
 
           >
@@ -62,7 +63,7 @@ import ADProfileModal from "./ADProfileModal";
           bg="black"
           >
             {
-              children ?  <Button colorScheme='red' size='md'  mr={3} onClick={()=>nav("/adminDashboard")}>
+              children ?  <Button colorScheme='red' size={{base:"sm",md:"md"}}  mr={3} onClick={()=>nav("/adminDashboard")}>
               Home
             </Button>
             : null

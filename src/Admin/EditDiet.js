@@ -189,7 +189,7 @@ useEffect(() => {
       d="flex"
       flexDir={"column"}
       alignItems={"center"}
-      width={"50%"}
+      width={{base:"400px",md:"600px"}}
 
       >
         <Text>

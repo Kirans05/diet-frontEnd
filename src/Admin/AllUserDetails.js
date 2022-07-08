@@ -76,12 +76,18 @@ const AllUserDetails = () => {
               padding={10}
 
               >
-                <Image boxSize="200px" src={item.pic} alt="User image" />
+                <Image boxSize="200px" src={item.pic} alt="User image"
+                maxW={{base:"150px",md:"400px"}} 
+                maxH={{base:"200px",md:"300px"}} 
+                minW={{base:"150px",md:"400px"}} 
+                minH={{base:"200px",md:"300px"}} 
+                />
                 <Box
                 d="flex"
                 flexDirection={"column"}
                 rowGap={5}
                 ml={10}
+                fontSize={{base:20,md:30}}
                 >
                   <Text>Name : {item.name}</Text>
                   <Text>Email : {item.email}</Text>

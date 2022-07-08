@@ -156,7 +156,7 @@ const ViewDiet = () => {
       <AHeader  >
         <button>Home</button>
       </AHeader>
-      <Box bg="bisque" fontSize={40} d="flex" className="box1">
+      <Box bg="bisque" fontSize={{base:30,md:40}} d="flex" className="box1">
         <Text mr={5}>Diet Planner</Text>
         <Text>
           {date}-{month}-{year}
@@ -207,7 +207,9 @@ const ViewDiet = () => {
             alignItems={"flex-start"}
             rowGap={5}
             boxShadow={"lg"}
-            width={"50%"}
+            width={{base:"100%",md:"50%"}}
+            marginLeft={{base:"10px"}}
+            marginRight={{base:"10px"}}
             p={5}
             _hover={{
               boxShadow: "2xl",
@@ -257,7 +259,9 @@ const ViewDiet = () => {
             alignItems={"flex-start"}
             rowGap={5}
             boxShadow={"lg"}
-            width={"50%"}
+            width={{base:"100%",md:"50%"}}
+            marginLeft={{base:"10px"}}
+            marginRight={{base:"10px"}}
             _hover={{
               boxShadow: "2xl",
             }}
@@ -292,7 +296,9 @@ const ViewDiet = () => {
             _hover={{
               boxShadow: "2xl",
             }}
-            width={"50%"}
+            width={{base:"100%",md:"50%"}}
+            marginLeft={{base:"10px"}}
+            marginRight={{base:"10px"}}
             p={5}
           >
             <Text>Dinner</Text>
@@ -324,7 +330,9 @@ const ViewDiet = () => {
               boxShadow: "2xl",
             }}
             boxShadow={"lg"}
-            width={"50%"}
+            width={{base:"100%",md:"50%"}}
+            marginLeft={{base:"10px"}}
+            marginRight={{base:"10px"}}
             p={5}
           >
             <Text>Snacks</Text>

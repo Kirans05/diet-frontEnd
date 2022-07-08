@@ -135,7 +135,7 @@ const NewDietPlan = () => {
       <AHeader>
         <Button
           colorScheme="teal"
-          size="md"
+          size={{base:"sm",md:"md"}}
           onClick={() => nav("/adminDashboard")}
           mr={5}
         >
@@ -150,6 +150,7 @@ const NewDietPlan = () => {
           d="flex"
           flexDir={"column"}
           rowGap={5}
+          width={{base:"400px",md:"600px"}}
         >
           <Input placeholder="Enter Diet Name" size="lg" type={"text"} name="dietname" value={dietName} onChange={dietInputHandler}/>
           <table width={"50%"}>
