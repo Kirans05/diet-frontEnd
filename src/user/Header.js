@@ -41,7 +41,7 @@ const Header = () => {
     >
       |
       <Text
-        mr={12}
+        mr={{ base: 0, md: 12 }}
         mt={0}
         mb={0}
         onClick={onOpen}
@@ -50,12 +50,15 @@ const Header = () => {
           cursor: "pointer",
         }}
         className="homeHeaderfont"
+        fontSize={{ base: "15px", md: "30px" }}
       >
         SignUp / Login / AdminLogin
       </Text>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent
+        w={{base:"400px",md:"500px"}}
+        >
           <ModalHeader>SignUp / Login</ModalHeader>
           <ModalCloseButton />
           <ModalBody>

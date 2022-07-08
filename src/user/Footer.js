@@ -12,12 +12,12 @@ const Footer = () => {
     >
         <Box
         d="flex"
-        flexDir={"row"}
+        flexDir={{base:"column",md:"row"}}
         alignItems="center"
         justifyContent={"space-evenly"}
         >
             <Text 
-            fontSize={30}
+            fontSize={{base:20,md:30}}
             >
                 HealthFit
             </Text>
@@ -26,20 +26,21 @@ const Footer = () => {
             flexDir={"column"}
             alignItems={"center"}
             justifyContent={"center"}
+            
             >
-                <Text>DOWNLOAD APP</Text>
+                <Text fontSize={{base:15}}>DOWNLOAD APP</Text>
                 <Box
                 d="flex"
                 justifyContent={"space-between"}
                 >
-                    <Image src={GooglePlay}  alt="google play" mr={10}/>
+                    <Image src={GooglePlay}  alt="google play" mr={10} />
                     <Image src={Apple}  alt="google play"/>
                 </Box>
             </Box>
         </Box>
         <Box>
             <Text
-            fontSize={25}
+            fontSize={{base:20,md:30}}
             m={"20px 0px 0px 0px"}
             textAlign={"center"}
             >
